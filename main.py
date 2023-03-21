@@ -12,6 +12,7 @@ emissionMatrix = json.load(f)
 f.close()
 
 test = input("Enter a sentence to receive POS tags: ")
+test = test.lower()
 raw = test.split(" ")
 for i in raw:
   prevTag = "start"
